@@ -7,7 +7,8 @@
 
     <title>Connectify - A Social media site Connectify made by Sabcraft</title>
     <!-- linking css -->
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="/assets/css/responsive_code.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -55,13 +56,71 @@
         <!-- home body conent  -->
         <div class="main-wrapper">
             <div class="details-user user-list">
-                <div class="current-user">
-                    <img src="/assets/img/profile_1.png" alt="Current_user img">
-                    <div class="current-user-deatils">
-                        <h3>Sabin Dhungana</h3>
-                        <p>@sabindhungana</p>
+                <div class="friends-header">
+                    <img src="/assets/img/profile_1.png" alt="Profile picture" class="friends-profile-pic">
+                    <div class="friends-profile-info">
+                        <h2>Sajjan Poudel</h2>
+                        <p>@sajjan.exe</p>
                     </div>
                 </div>
+                <div class="friends-suggestions">
+                    <h3>You may Know</h3>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Bashu Dev Poudel</p>
+                            <p class="friends-username">@basu69</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Bidhan Bhatta</p>
+                            <p class="friends-username">@bidhan120</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Asun Stha</p>
+                            <p class="friends-username">@asunstha</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Samir Samir</p>
+                            <p class="friends-username">@samir</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Sabin Gurung</p>
+                            <p class="friends-username">@sabinurung</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                    <div class="friends-suggestion-item">
+                        <img src="/assets/img/profile_1.png" class="friends-suggestion-pic">
+                        <div class="friends-suggestion-info">
+                            <p class="friends-name">Pratik Radabahr</p>
+                            <p class="friends-username">@pratik</p>
+                        </div>
+                        <button class="friends-join-btn">Add <i
+                                class="fa-sharp-duotone fa-regular fa-plus"></i></button>
+                    </div>
+                </div>
+
 
 
             </div>
@@ -86,18 +145,94 @@
                         <div class="post-comment post-opinion">
                             <i class="fa-solid fa-comment"></i>
                         </div>
+                    </div>
+                    <div class="post-desc user-post-deatils">
+                        <p>Let's create an intresting todo app using HTML css and js . Best tutorail in the
+                            youtube for now Let's make the best todo web app here now here. </p>
+                    </div>
+                    <div class="user-post-comment-input">
+                        <div class="comment-input-section">
+                            <input type="text" placeholder="Say Something">
                         </div>
-                        <div class="post-desc user-post-deatils">
-                            <p>Let's create an intresting todo app using HTML css and js . Best tutorail in the
-                                youtube for now Let's make the best todo web app here now here. </p>
+                        <div class="comment-post-button">
+                            <button>Post</button>
+
                         </div>
-                        <div class="user-post-comment-input">
-                            <div class="comment-input-section">
-                                <input type="text" placeholder="Say Something">
-                            </div>
-                            <div class="comment-post-button">
-                                <button>Post</button>
-                           
+
+
+                    </div>
+
+                </div>
+                <div class="main-post-box">
+                    <div class="post-user-deatils">
+                        <div class="post-user-name-deatils">
+                            <img src="assets/img/profile_1.png" alt="Profile user">
+                            <h3>Sabin Dhungana</h3>
+                        </div>
+                        <div class="post-user-required post-options-require">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="post-image post-thumbnail-img">
+                        <img src="/assets/img/post_1.png" alt="post-thubnail ">
+                    </div>
+                    <div class="post-react-comment post-user-intreact">
+                        <div class="post-like post-react">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="post-comment post-opinion">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
+                    <div class="post-desc user-post-deatils">
+                        <p>Let's create an intresting todo app using HTML css and js . Best tutorail in the
+                            youtube for now Let's make the best todo web app here now here. </p>
+                    </div>
+                    <div class="user-post-comment-input">
+                        <div class="comment-input-section">
+                            <input type="text" placeholder="Say Something">
+                        </div>
+                        <div class="comment-post-button">
+                            <button>Post</button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="main-post-box">
+                    <div class="post-user-deatils">
+                        <div class="post-user-name-deatils">
+                            <img src="assets/img/profile_1.png" alt="Profile user">
+                            <h3>Sabin Dhungana</h3>
+                        </div>
+                        <div class="post-user-required post-options-require">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="post-image post-thumbnail-img">
+                        <img src="/assets/img/post_1.png" alt="post-thubnail ">
+                    </div>
+                    <div class="post-react-comment post-user-intreact">
+                        <div class="post-like post-react">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="post-comment post-opinion">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
+                    <div class="post-desc user-post-deatils">
+                        <p>Let's create an intresting todo app using HTML css and js . Best tutorail in the
+                            youtube for now Let's make the best todo web app here now here. </p>
+                    </div>
+                    <div class="user-post-comment-input">
+                        <div class="comment-input-section">
+                            <input type="text" placeholder="Say Something">
+                        </div>
+                        <div class="comment-post-button">
+                            <button>Post</button>
+
                         </div>
 
 
