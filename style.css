@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #f2f4f7;
+}
+
 html,
 body {
-    height: 100%;
-    width: 100%;
+
     background-color: #f2f4f7;
+    overflow-x: hidden;
 
 }
 
@@ -16,7 +20,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #f2f4f7;
-   
+
 }
 
 .nav-bar {
@@ -27,6 +31,7 @@ body {
     box-shadow: 2px 2px 2px gray;
     display: grid;
     grid-template-columns: 25% 40% auto;
+    position: fixed;
 }
 
 .nav-bar .nav-logo {
@@ -126,42 +131,128 @@ body {
     border-bottom: 2px solid #0866ff;
     border-radius: 2px;
 }
-.main-wrapper{
+
+.main-wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
-height: calc(100% - 70px);
-width: 100%;
+    height: calc(100% - 70px);
+    padding-top: 70px;
+    background-color: #f2f4f7;
+    width: 100%;
 }
-.user-list{
-    background-color: red;
-padding: 20px 20%;
+
+.user-list {
+    /* background-color: red; */
+    padding: 20px 20%;
+    overflow: hidden;
+    position: sticky;
 }
-.details-user .current-user{
+
+.details-user .current-user {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .details-user .current-user .current-user-deatils {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.details-user .current-user .current-user-deatils h3{
+
+.details-user .current-user .current-user-deatils h3 {
     font-size: 2.2vw;
     margin-bottom: 0;
 }
-.details-user .current-user .current-user-deatils p{
+
+.details-user .current-user .current-user-deatils p {
     margin-top: 0;
 }
 
-.details-user .current-user img{
+.details-user .current-user img {
     width: 150px;
     border-radius: 50%;
 
 }
 
 
+.main-post-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 93%;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+    background-color: white;
+
+}
+
+.main-post-box .post-user-deatils {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.main-post-box .post-user-deatils .post-user-name-deatils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.main-post-box .post-user-deatils .post-user-name-deatils img {
+    height: 35px;
+    border-radius: 50%;
+    margin: 9px 10px;
+}
+
+.main-post-box .post-user-deatils .post-user-name-deatils h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
 
 
+}
+
+.main-post-box .post-user-deatils .post-user-required i {
+    font-size: 18px;
+    color: black;
+    margin: 0 15px;
+    cursor: pointer;
+
+}
+
+.main-post-box .post-thumbnail-img img {
+    width: 100%;
+
+}
+
+.main-post-box .post-react-comment {
+    display: flex;
+    /* gap: 50px; */
+
+}
+
+.main-post-box .post-react-comment .post-react {}
+
+.main-post-box .post-react-comment .post-react i,
+.post-user-intreact i {
+    color: black;
+    margin: 5px 5px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    font-size: 20px;
+
+}
+
+.main-post-box .post-react-comment .post-react i:hover,
+.post-user-intreact i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
