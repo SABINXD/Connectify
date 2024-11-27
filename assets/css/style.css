@@ -140,6 +140,12 @@ html, body {
     color: black;
     font-weight: bold;
 }
+.friends-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between each suggestion */
+}
+
 
 .main-wrapper {
     display: grid;
