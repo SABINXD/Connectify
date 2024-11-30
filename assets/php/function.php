@@ -135,12 +135,29 @@ function validateLoginForm($form_data)
         $blank=true;
     }
     if(!$blank && !checkUser($form_data)['status']){
-        $response['msg'] = "Something is incrcoet we cannot find you";
+        $response['msg'] = "Something is incorrect we cannot find you";
         $response['status'] = false;
         $response['field'] = 'checkuser';
     }else{
         $response['user']=checkUser($form_data)['user'];
     }
+   return $response;
+}
+// fro checking code
+function validateVerify($form_data)
+{
+    $response = array();
+    $response['status'] = true;
+    $blank=false;
+
+
+    if(!$form_data['verify_code']){
+        $response['msg'] = "please Enter code";
+        $response['status'] = false;
+        $response['field'] = 'verify_code';
+        $blank=true;
+    }
+    
    return $response;
 }
 
@@ -188,5 +205,7 @@ function createUser($data)
     $query .= "VALUES ('$first_name','$last_name',$gender,'$email','$username','$password')";
     return mysqli_query($db, $query);
 }
+//function to send  the code 
+
 
 ?>

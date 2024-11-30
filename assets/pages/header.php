@@ -9,6 +9,8 @@
     <!-- linking css -->
     <link rel="stylesheet" href="./assets/css/responsive_code.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/verify_user.css">
+    <link rel="stylesheet" href="./assets/css/blocked_user.css">
     <link rel="stylesheet" href="./assets/css/login_page.css">
     <link rel="stylesheet" href="./assets/css/signup_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
